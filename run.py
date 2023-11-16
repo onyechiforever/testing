@@ -254,7 +254,7 @@ async def ConnectMetaTrader(update: Update, trade: dict, enterTrade: bool):
         GetTradeInformation(update, trade, account_information['balance'])
             
         # checks if the user has indicated to enter trade
-        if(enterTrade == True):
+        if(enterTrade == False):
 
             # enters trade on to MetaTrader account
             update.effective_message.reply_text("Entering trade on MetaTrader Account ... 👨🏾‍💻")
